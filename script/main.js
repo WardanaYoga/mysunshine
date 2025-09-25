@@ -1,8 +1,8 @@
-// trigger to play music in the background with sweetalert
+
 window.addEventListener("load", () => {
   Swal.fire({
     title: "Do you want to play music in the background?",
-    // text: "You won't be able to revert this!",
+   
     icon: "warning",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
@@ -19,9 +19,9 @@ window.addEventListener("load", () => {
   });
 });
 
-// animation timeline
+
 const animationTimeline = () => {
-  // split chars that needs to be animated individually
+ 
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -47,7 +47,7 @@ const animationTimeline = () => {
     skewX: "-15deg",
   };
 
-  // timeline
+
   const tl = new TimelineMax();
 
   tl.to(".container", 0.6, {
@@ -291,9 +291,9 @@ const animationTimeline = () => {
       "+=1"
     );
 
-  // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
     tl.restart();
   });
 };
+
